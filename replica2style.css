@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 760px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #1e293b;
+  letter-spacing: 0.5px;
+  margin-bottom: 36px;
+}
+
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 28px;
+  column-gap: 24px;
+}
+
+.color-grid span {
+  font-size: 1.45rem;
+  font-weight: 700;
+}
+
+.cool-gray  { color: #374151; }
+.warm-gray  { color: #9ca3af; }
+.amber      { color: #b45309; }
+.green      { color: #15803d; }
+
+.cyan       { color: #0e7490; }
+.red        { color: #ef4444; }
+.yellow     { color: #f59e0b; }
+.emerald    { color: #047857; }
+
+.sky        { color: #0ea5e9; }
+.orange     { color: #f97316; }
+.lime       { color: #65a30d; }
+.teal       { color: #0f766e; }
+
+.fuchsia    { color: #c026d3; }
+.pink       { color: #db2777; }
+.rose       { color: #f43f5e; }
+.blue-gray  { color: #1e293b; }
+
+.purple     { color: #9333ea; }
+.violet     { color: #7c3aed; }
+.indigo     { color: #4338ca; }
+.blue       { color: #2563eb; }
+
+@media (max-width: 640px) {
+  .color-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+}
